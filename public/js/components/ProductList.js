@@ -8,7 +8,7 @@ function ProductList(props) {
 
   return (
     <div className='product-list'>
-      {productDetails}
+      {props.products.length ? productDetails : 'No products available.'}
     </div>
   )
 }

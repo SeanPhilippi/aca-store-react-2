@@ -28,6 +28,7 @@ class App extends React.Component{
             cart={this.state.shoppingCart}
             changeView={this.changeView}
         >
+            {/* conditional logic for what to render, changes based on value of state.view */}
             {this.state.view === 'products' ? 
             <ProductList addToCart={this.addItemToCart} products={this.props.products}/> : 
             <ShoppingCart cart={this.state.shoppingCart} />}

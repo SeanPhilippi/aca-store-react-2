@@ -18,7 +18,6 @@ function Layout(props) {
             <Carousel />
             <div className="row">
               {props.children}
-              {/* <ProductList products={props.products}/> */}
             </div>
           </div>
       </div>
