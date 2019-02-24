@@ -1,10 +1,15 @@
 function ShoppingCart(props) {
   const shoppingCartItems = props.cart
     .map(product => {
-      return <ProductDetail />
+      return <ProductDetail product={product} />
     });
     return (
-      {shoppingCartItems}
+      <div className='cart-container'>
+        <div className='cart-items'>
+          {shoppingCartItems}
+        </div>
+        <Checkout />
+      </div>
     )
 }
 

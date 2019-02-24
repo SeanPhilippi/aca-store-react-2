@@ -1,5 +1,14 @@
 function ProductList(props) {
+  const productDetails = props.products.map((p, i) => {
+    return  <ProductDetail 
+      addToCart={props.addToCart}
+      key={i} 
+      product={p} />
+  });
+
   return (
-    <div></div>
+    <div className='product-list'>
+      {productDetails}
+    </div>
   )
 }

@@ -18,7 +18,7 @@ class App extends React.Component{
    addItemToCart = (product) => {
     this.setState(() => {
         this.state.shoppingCart.push(product);
-        return {shoppingCart:this.state.shoppingCart}
+        return {shoppingCart: this.state.shoppingCart}
     })
    }
 
@@ -26,11 +26,11 @@ class App extends React.Component{
        return (
         <Layout 
             cart={this.state.shoppingCart}
-            addToCart={this.addItemToCart}
-            products={this.props.products}
             changeView={this.changeView}
         >
-
+            {this.state.view === 'products' ? 
+            <ProductList addToCart={this.addItemToCart} products={this.props.products}/> : 
+            <ShoppingCart cart={this.state.shoppingCart} />}
         </Layout>
        )
    }

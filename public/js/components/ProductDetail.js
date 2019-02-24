@@ -36,7 +36,7 @@
                 {star}
             </p>
         </div>
-        <button onClick={()=>{
+        <button onClick={() => {
             //what do we code here
             props.addToCart(props.product);
         }}>Add To Cart</button>

@@ -1,4 +1,5 @@
 function Header(props){
+    console.log('props', props)
     return (
         <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div className="container">
