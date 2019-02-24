@@ -1,6 +1,5 @@
 function Layout(props) {
   const productDetails = props.products.map((p, i) => {
-    console.log('this.props', props)
     return  <ProductDetail 
       addToCart={props.addToCart}
       key={i} 
@@ -8,7 +7,7 @@ function Layout(props) {
   });
   return (  
     <div className="App">
-      <Header cart={props.cart}/>
+      <Header cart={props.cart} changeView={props.changeView} />
       <div className="container">
         <div className="row">
           <div className="col-md-3">

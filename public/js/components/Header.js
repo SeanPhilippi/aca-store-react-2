@@ -25,10 +25,10 @@ function Header(props){
                         <a href="#">Contact</a>
                     </li>
                     <li>
-                        <a href="#">Products</a>
+                        <a href="#" onClick={() => props.changeView('products')} >Products</a>
                     </li>
                     <li >
-                        <a href="#">Items In Cart ({props.cart.length})</a>
+                        <a href="#" onClick={() => props.changeView('cart')} >Items In Cart ({props.cart.length})</a>
                     </li>
                 </ul>
             </div>
