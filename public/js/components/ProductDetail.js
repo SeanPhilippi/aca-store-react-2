@@ -30,7 +30,7 @@
         </div>
         <div className="ratings">
             <p className="pull-right">
-            {props.product.reviews} reviews</p>
+            {props.product.reviews.length} reviews</p>
             <p>
                 
                 {star}
