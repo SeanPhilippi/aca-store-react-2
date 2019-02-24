@@ -2,9 +2,9 @@ function Layout(props) {
   const productDetails = props.products.map((p, i) => {
     console.log('this.props', props)
     return  <ProductDetail 
-    addToCart={props.addToCart}
-    key={i} 
-    product={p} />
+      addToCart={props.addToCart}
+      key={i} 
+      product={p} />
   });
   return (  
     <div className="App">
@@ -23,7 +23,7 @@ function Layout(props) {
           <div className="col-md-9">
             <Carousel />
             <div className="row">
-                {productDetails}
+              {productDetails}
             </div>
           </div>
       </div>

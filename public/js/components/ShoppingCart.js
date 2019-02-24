@@ -1,5 +1,9 @@
-function ShoppingCart() {
-  return (
-    <div></div>
-  )
+function ShoppingCart(props) {
+  const shoppingCartItems = props.cart
+    .map(product => {
+      return <ProductDetail />
+    });
+    return (
+      {shoppingCartItems}
+    )
 }
