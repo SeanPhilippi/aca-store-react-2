@@ -7,3 +7,7 @@ function ShoppingCart(props) {
       {shoppingCartItems}
     )
 }
+
+ShoppingCart.propTypes = {
+  cart: PropTypes.array,
+}

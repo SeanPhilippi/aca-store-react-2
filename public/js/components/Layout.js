@@ -34,3 +34,10 @@ function Layout(props) {
   </div>
   );
 }
+
+Layout.propTypes = {
+  changeView: PropTypes.func,
+  cart: PropTypes.array,
+  addToCart: PropTypes.func,
+  products: PropTypes.array
+}

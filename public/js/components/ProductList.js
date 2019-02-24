@@ -1,4 +1,4 @@
-function ProductList() {
+function ProductList(props) {
   return (
     <div></div>
   )

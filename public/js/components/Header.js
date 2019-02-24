@@ -38,3 +38,8 @@ function Header(props){
     </nav>
   );
 }
+
+Header.propTypes = {
+    changeView: PropTypes.string,
+    cart: PropTypes.array,
+}

@@ -35,3 +35,7 @@ class App extends React.Component{
        )
    }
 }
+
+App.propTypes = {
+    products: PropTypes.array,
+}
